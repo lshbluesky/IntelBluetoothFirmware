@@ -37,7 +37,7 @@ PluginConfiguration ADDPR(config) {
     bootargBeta,
     arrsize(bootargBeta),
     KernelVersion::MountainLion,
-    KernelVersion::Sequoia,
+    KernelVersion::Tahoe,
     []() {
         ibtPatcher.init();
     }
