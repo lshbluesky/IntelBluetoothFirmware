@@ -217,6 +217,7 @@ setup()
         case 0x19:
         case 0x1b:
         case 0x1c:
+        case 0x1d:      /* BlazarU (BzrU) - BE200/BE201 class */
             /* Display version information of TLV type */
             versionInfoTLV(&verTLV);
             
@@ -631,6 +632,7 @@ versionInfoTLV(IntelVersionTLV *version)
         case 0x19:    /* Slr-F */
         case 0x1b:    /* Mgr */
         case 0x1c:    /* Gale Peak (GaP) */
+        case 0x1d:    /* BlazarU (BzrU) */
             break;
         default:
             XYLog("Unsupported Intel hardware variant (0x%x)\n",
